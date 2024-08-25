@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+header .logo img {
+    height: 100px;
+    border-radius: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.search-container {
+    display: flex;
+    gap: 10px;
+}
+
+.search-container input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+.featured {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.featured-video video {
+    width: 1500px; /* กำหนดขนาดของวิดีโอ */
+    height: auto;
+    border-radius: 20px;
+}
+
+.featured-image img {
+    max-width: 300px; /* กำหนดขนาดของรูปภาพ */
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 380px;
+    right: 90px;
+}
+
+.trending-shows {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* ทำให้เลื่อนซ้ายขวาได้ */
+    padding-bottom: 20px; /* เพิ่ม padding ด้านล่างสำหรับให้เลื่อนง่ายขึ้น */
+    padding: 10px;
+}
+
+.trending h2 {
+    padding-left: 30px;
+    color: #007bff;
+}
+
+.show-item {
+    flex: 0 0 auto; /* ทำให้แต่ละ show-item ไม่หดขนาดลง */
+    max-width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease; /* เพิ่มเอฟเฟกต์เมื่อเมาส์ไปชี้ */
+}
+
+.show-item img {
+    width: 100%;
+    height: 200px; /* กำหนดขนาดคงที่ */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.show-item:hover {
+    transform: scale(1.1); /* ขยายเมื่อเมาส์ไปชี้ */
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #111;
+}
